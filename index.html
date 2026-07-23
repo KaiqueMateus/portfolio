@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kaique Mateus de Souza — Analista de Dados & Business Intelligence. Transformo dados em decisões estratégicas com Power BI, Python e SQL." />
+  <meta name="author" content="Kaique Mateus de Souza" />
+  <title>Kaique Souza • Analista de Dados & BI</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<a href="https://wa.me/5521981028708?text=Ol%C3%A1%20Kaique!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener" class="whattooltip">Fale comigo no WhatsApp</span>
+</a>
+
+<body>
+
+  <!-- ========== BACKGROUND FX ========== -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow glow-1" aria-hidden="true"></div>
+  <div class="bg-glow glow-2" aria-hidden="true"></div>
+  <div class="bg-glow glow-3" aria-hidden="true"></div>
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <!-- ========== PROGRESS BAR ========== -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-mark">K<span class="dot">.</span>M</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active"><span>01</span> Início</a></li>
+        <li><a href="#about" class="nav-link"><span>02</span> Sobre</a></li>
+        <li><a href="#stack" class="nav-link"><span>03</span> Stack</a></li>
+        <li><a href="#experience" class="nav-link"><span>04</span> Experiência</a></li>
+        <li><a href="#projects" class="nav-link"><span>05</span> Projetos</a></li>
+        <li><a href="#contact" class="nav-link"><span>06</span> Contato</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-nav">
+        <i class="bi bi-send-fill"></i> Fale comigo
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section id="home" class="hero">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge fade-in">
+          <span class="pulse"></span>
+          Disponível para novas oportunidades
+        </div>
+
+        <h1 class="hero-title fade-in">
+          Olá, sou o <span class="gradient-text">Kaique Souza</span><span class="cursor-blink">_</span>
+        </h1>
+
+        <div class="hero-role fade-in">
+          <span class="mono">&lt;</span>
+          <span id="typed"></span>
+          <span class="mono">/&gt;</span>
+        </div>
+
+        <p class="hero-desc fade-in">
+          Transformo <strong>dados em decisões estratégicas</strong> com
+          <span class="chip">Power BI</span>
+          <span class="chip">Python</span>
+          <span class="chip">SQL</span>
+          — mais de <strong>4 anos</strong> desenhando dashboards executivos, automatizando processos e integrando sistemas de ponta a ponta.
+        </p>
+
+        <div class="hero-meta fade-in">
+          <span><i class="bi bi-geo-alt-fill"></i> São José dos Pinhais / PR</span>
+          <span><i class="bi bi-briefcase-fill"></i> Analista de Dados & BI</span>
+          <span><i class="bi bi-lightning-charge-fill"></i> 4+ anos de experiência</span>
+        </div>
+
+        <div class="hero-cta fade-in">
+          <a href="#projects" class="btn btn-primary">
+            <i class="bi bi-grid-1x2-fill"></i> Ver Projetos
+            <span class="btn-arrow">→</span>
+          </a>
+          <a href="#contact" class="btn btn-ghost">
+            <i class="bi bi-chat-dots-fill"></i> Falar comigo
+          </a>
+        </div>
+
+        <div class="hero-socials fade-in">
+          <a href="https://github.com/KaiqueMateus" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/kaique-mateus-de-souza-0baa83238/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="mailto:kaique8mateus@gmail.com" aria-label="E-mail"><i class="bi bi-envelope-fill"></i></a>
+        </div>
+      </div>
+
+      <!-- HERO VISUAL: terminal card -->
+      <div class="hero-visual fade-in">
+        <div class="terminal-card">
+          <div class="terminal-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="term-title">kaique@bi:~/portfolio</span>
+          </div>
+          <div class="terminal-body">
+            <p><span class="term-prompt">$</span> <span class="term-cmd">whoami</span></p>
+            <p class="term-out">Kaique Souza • Analista de Dados & BI</p>
+            <p><span class="term-prompt">$</span> <span class="term-cmd">cat skills.json</span></p>
+<pre class="term-json">{
+  "bi":        ["Power BI", "Qlik Sense", "DAX", "M"],
+  "linguagens":["Python", "SQL", "VBA", "VBS", "JS", "Node", "HTML", "CSS"],
+  "etl":       ["Alteryx", "Power Query", "SSIS"],
+  "erp":       ["SAP", "S/4HANA", "Oracle"],
+  "cloud":     ["AWS", "Azure"],
+  "foco":      "traduzir dados em decisão"
+}</pre>
+            <p><span class="term-prompt">$</span> <span class="term-cmd">run --portfolio</span></p>
+            <p class="term-out term-success">✔ Portfólio carregado com sucesso.</p>
+            <p><span class="term-prompt">$</span> <span class="term-cursor">▊</span></p>
+          </div>
+        </div>
+
+        <!-- Floating KPIs -->
+        <div class="float-card float-1">
+          <i class="bi bi-graph-up-arrow"></i>
+          <div>
+            <strong>+15</strong>
+            <span>Dashboards entregues</span>
+          </div>
+        </div>
+        <div class="float-card float-2">
+          <i class="bi bi-cpu-fill"></i>
+          <div>
+            <strong>+5</strong>
+            <span>Automações criadas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-hint" aria-label="Rolar">
+      <span></span>
+      <p>Scroll</p>
+    </a>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">02 —</span>
+        <h2 class="section-title">Sobre <span class="gradient-text">mim</span></h2>
+        <p class="section-sub">Quem é o profissional por trás dos dashboards</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-left reveal">
+          <div class="profile-card">
+            <div class="profile-photo-wrap">
+              <div class="profile-photo-ring"></div>
+              <img src="assets/img/profile.jpg" alt="Kaique Mateus de Souza" class="profile-photo" />
+              <span class="profile-status" title="Disponível"></span>
+            </div>
+            <h3 class="profile-name">Kaique Souza</h3>
+            <p class="profile-role">Analista de Dados & BI</p>
+            <div class="profile-info">
+              <div><i class="bi bi-geo-alt-fill"></i> São José dos Pinhais / PR — Brasil</div>
+              <div><i class="bi bi-briefcase-fill"></i> BASIS • TJPR • SEPREC</div>
+              <div><i class="bi bi-mortarboard-fill"></i> Formação em Ciência da Computação</div>
+            </div>
+            <div class="profile-socials">
+              <a href="https://github.com/KaiqueMateus" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+              <a href="https://www.linkedin.com/in/kaique-mateus-de-souza-0baa83238/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="mailto:kaique8mateus@gmail.com" aria-label="E-mail"><i class="bi bi-envelope-fill"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text reveal">
+          <p class="lead">
+            Sou <strong>Analista de Dados e Business Intelligence</strong> com mais de
+            <strong>4 anos de experiência</strong> em tecnologia, transformando dados em decisões
+            estratégicas por meio de <strong>Power BI, Python, SQL e automação de processos</strong>.
+          </p>
+          <p>Sou casado com Marcely Souza, nascido no Rio de Janeiro e atualmente moro em São José dos Pinhais no Paraná.</p>
+          <p>
+            Mais do que dominar ferramentas, valorizo <strong>entender o negócio por trás do dado</strong>.
+            Foi essa visão que me permitiu desenvolver habilidades sólidas de comunicação,
+            relacionamento com clientes e tradução entre áreas técnicas e tomadores de decisão.
+          </p>
+
+          <div class="specialties">
+            <h3><i class="bi bi-bullseye"></i> Especialidades</h3>
+            <div class="spec-grid">
+              <div class="spec-item"><i class="bi bi-check2-circle"></i> Dashboards Executivos</div>
+              <div class="spec-item"><i class="bi bi-check2-circle"></i> Automação de Processos</div>
+              <div class="spec-item"><i class="bi bi-check2-circle"></i> Modelagem de Dados</div>
+              <div class="spec-item"><i class="bi bi-check2-circle"></i> Integração de Sistemas</div>
+              <div class="spec-item"><i class="bi bi-check2-circle"></i> ETL & Data Warehouse</div>
+              <div class="spec-item"><i class="bi bi-check2-circle"></i> Análise de Negócios</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-stats reveal">
+          <div class="stat-card">
+            <div class="stat-num" data-target="4">0</div>
+            <div class="stat-label">+ Anos de experiência</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num" data-target="15">0</div>
+            <div class="stat-label">+ Dashboards entregues</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num" data-target="5">0</div>
+            <div class="stat-label">Automações criadas</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num" data-target="8">0</div>
+            <div class="stat-label">Empresas atendidas</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STACK ========== -->
+  <section id="stack" class="section section-dim">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">03 —</span>
+        <h2 class="section-title">Stack <span class="gradient-text">Principal</span></h2>
+        <p class="section-sub">As ferramentas que uso para entregar valor</p>
+      </div>
+
+      <div class="stack-grid">
+        <div class="stack-category reveal">
+          <div class="cat-head">
+            <i class="bi bi-bar-chart-line-fill"></i>
+            <h3>Visualização & Análise</h3>
+          </div>
+          <div class="tech-tags">
+            <span class="tech"><i class="bi bi-bar-chart-fill"></i> Power BI</span>
+            <span class="tech"><i class="bi bi-pie-chart-fill"></i> Qlik Sense</span>
+            <span class="tech"><i class="bi bi-file-code"></i> DAX</span>
+            <span class="tech"><i class="bi bi-braces"></i> Power Query (M)</span>
+            <span class="tech"><i class="bi bi-file-earmark-excel-fill"></i> Excel Avançado</span>
+          </div>
+        </div>
+
+        <div class="stack-category reveal">
+          <div class="cat-head">
+            <i class="bi bi-code-slash"></i>
+            <h3>Linguagens & Scripts</h3>
+          </div>
+          <div class="tech-tags">
+            <span class="tech"><i class="bi bi-filetype-py"></i> Python</span>
+            <span class="tech"><i class="bi bi-database-fill"></i> SQL</span>
+            <span class="tech"><i class="bi bi-terminal-fill"></i> VBA</span>
+            <span class="tech"><i class="bi bi-terminal"></i> VBS</span>
+            <span class="tech"><i class="bi bi-filetype-js"></i> JavaScript</span>
+            <span class="tech"><i class="bi bi-filetype-html"></i> HTML5</span>
+            <span class="tech"><i class="bi bi-filetype-css"></i> CSS3</span>
+            <span class="tech"><i class="bi bi-filetype-php"></i> PHP</span>
+            <span class="tech"><i class="bi bi-nodeplus"></i> Node.js</span>
+          </div>
+        </div>
+
+        <div class="stack-category reveal">
+          <div class="cat-head">
+            <i class="bi bi-arrow-repeat"></i>
+            <h3>ETL & Automação</h3>
+          </div>
+          <div class="tech-tags">
+            <span class="tech"><i class="bi bi-diagram-3-fill"></i> Alteryx</span>
+            <span class="tech"><i class="bi bi-robot"></i> Automações Python</span>
+            <span class="tech"><i class="bi bi-gear-fill"></i> Power Automate</span>
+          </div>
+        </div>
+
+        <div class="stack-category reveal">
+          <div class="cat-head">
+            <i class="bi bi-hdd-stack-fill"></i>
+            <h3>Bancos de Dados</h3>
+          </div>
+          <div class="tech-tags">
+            <span class="tech"><i class="bi bi-database"></i> SAP HANA</span>
+            <span class="tech"><i class="bi bi-database-fill-gear"></i> Oracle</span>
+            <span class="tech"><i class="bi bi-database-fill"></i> SQL Server</span>
+            <span class="tech"><i class="bi bi-database-fill-check"></i> Postgres</span>
+          </div>
+        </div>
+
+        <div class="stack-category reveal">
+          <div class="cat-head">
+            <i class="bi bi-building-fill"></i>
+            <h3>ERP & Service</h3>
+          </div>
+          <div class="tech-tags">
+            <span class="tech"><i class="bi bi-box-seam-fill"></i> SAP</span>
+            <span class="tech"><i class="bi bi-box-fill"></i> S/4HANA</span>
+            <span class="tech"><i class="bi bi-headset"></i> ServiceNow</span>
+          </div>
+        </div>
+
+        <div class="stack-category reveal">
+          <div class="cat-head">
+            <i class="bi bi-cloud-fill"></i>
+            <h3>Cloud</h3>
+          </div>
+          <div class="tech-tags">
+            <span class="tech"><i class="bi bi-cloud"></i> AWS</span>
+            <span class="tech"><i class="bi bi-cloud-fill"></i> Azure</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE ========== -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">04 —</span>
+        <h2 class="section-title">Já <span class="gradient-text">atuei em</span></h2>
+        <p class="section-sub">Empresas para as quais desenvolvi soluções de dados, BI e automação</p>
+      </div>
+
+      <div class="companies-marquee reveal">
+        <div class="marquee-track">
+          <div class="company"><i class="bi bi-bank"></i> Sergio Bermudes Advogados</div>
+          <div class="company"><i class="bi bi-shield-fill-check"></i> Álamo Benefícios</div>
+          <div class="company"><i class="bi bi-fuel-pump-fill"></i> Petronect</div>
+          <div class="company"><i class="bi bi-droplet-fill"></i> Petrobras</div>
+          <div class="company"><i class="bi bi-shop"></i> Iplacas</div>
+          <div class="company"><i class="bi bi-lightning-fill"></i> Shock Visual</div>
+          <div class="company"><i class="bi bi-bank"></i> Tribunal de Justiça do Paraná</div>
+          <div class="company"><i class="bi bi-rocket-takeoff-fill"></i> Basis</div>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-period">Atual</span>
+            <h3>Analista de Dados & BI • TJPR / SEPREC</h3>
+            <p>Desenvolvimento do sistema de gestão de riscos (MAPA) do Serviço de Precatórios, com foco em governança, auditoria, dashboards executivos e integração via Supabase.</p>
+            <div class="tl-tags"><span>Power BI</span><span>SQL</span><span>JS</span><span>Supabase</span></div>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-period">Anos recentes</span>
+            <h3>Analista de Dados & BI • Petronect / Petrobras</h3>
+            <p>Painéis executivos para acompanhamento de oportunidades, TMR/SLA, taxa de acesso e extratos consolidados de suprimentos, além de automações Python integradas ao SAP e HANA.</p>
+            <div class="tl-tags"><span>Power BI</span><span>Alteryx</span><span>SAP</span><span>HANA</span><span>Python</span></div>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-period">Projetos paralelos</span>
+            <h3>BI & Automação • Iplacas, Shock Visual</h3>
+            <p>Consolidação de vendas multicanal (Shopee, Mercado Livre, vendas internas), CAC, retrabalhos, e painéis de consumo/gasto de energia para tomada de decisão.</p>
+            <div class="tl-tags"><span>Power BI</span><span>Excel</span><span>DAX</span><span>M</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-period">Estagiário • Início da carreira</span>
+            <h3>Desenvolvedor Estagiário • Álamo Benefícios</h3>
+            <p>Desenvolvimento de aplicações internas — Intranet, Blog e Sistema de Acompanhamento de Cadastro — com foco em automação de processos e integração com a base de dados SGA.</p>
+            <div class="tl-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span><span>Node.js</span><span>EJS</span><span>PHP</span><span>SQL</span><span>GCP</span><span>Power BI</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-period">Jovem Aprendiz</span>
+            <h3>Jovem Aprendiz • Sergio Bermudes Advogados</h3>
+            <p>Primeira experiência profissional em ambiente corporativo, com apoio às rotinas administrativas, organização de documentos e primeiro contato prático com ferramentas de produtividade e planilhas — a base para o interesse por dados.</p>
+            <div class="tl-tags"><span>Rotinas administrativas</span><span>Excel</span><span>Organização documental</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects" class="section section-dim">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">05 —</span>
+        <h2 class="section-title">Projetos <span class="gradient-text">em destaque</span></h2>
+        <p class="section-sub">Painéis, relatórios e automações que geraram impacto real</p>
+      </div>
+
+      <!-- Filters -->
+      <div class="filters reveal">
+        <button class="filter-btn active" data-filter="all"><i class="bi bi-grid-fill"></i> Todos</button>
+        <button class="filter-btn" data-filter="paineis"><i class="bi bi-bar-chart-fill"></i> Painéis</button>
+        <button class="filter-btn" data-filter="relatorios"><i class="bi bi-file-earmark-text-fill"></i> Relatórios</button>
+        <button class="filter-btn" data-filter="automacoes"><i class="bi bi-robot"></i> Automações</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- PAINÉIS -->
+         <article class="project-card reveal" data-cat="paineis">
+  <div class="proj-header">
+    <div class="proj-icon proj-icon-purple"><i class="bi bi-shield-fill-exclamation"></i></div>
+    <span class="proj-tag">Sistema Web • TJPR / SEPREC</span>
+  </div>
+  <h3>Sistema de Gestão de Riscos</h3>
+  <p>Plataforma completa de registro, avaliação e tratamento de riscos do Serviço de Precatórios do TJPR. Inclui matriz de risco interativa (probabilidade × impacto), dashboard executivo, controle de tratamento, gestão de usuários por divisão e trilha completa de auditoria em conformidade com LGPD.</p>
+  <div class="proj-kpis">
+    <span>Matriz de Risco</span>
+    <span>Risco Residual</span>
+    <span>Tratamento por Etapas</span>
+    <span>Dashboard por Divisão</span>
+    <span>Trilha de Auditoria</span>
+  </div>
+  <div class="proj-stack">
+    <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Supabase</span><span>PostgreSQL</span><span>RLS</span><span>Vercel</span>
+  </div>
+  <div class="proj-insight">
+    <i class="bi bi-lightbulb-fill"></i>
+    Sistema multi-usuário com controle granular por perfil (admin/gestor/usuário), exportação de PDF branded e governança de dados end-to-end.
+  </div>
+  <a href="https://github.com/KaiqueMateus/MapaDeRiscos-TJPR" target="_blank" rel="noopener" class="proj-link">
+    <i class="bi bi-github"></i> Ver no GitHub <i class="bi bi-arrow-up-right"></i>
+  </a>
+</article>
+
+       
+
+        <article class="project-card reveal" data-cat="paineis">
+          <div class="proj-header">
+            <div class="proj-icon proj-icon-blue"><i class="bi bi-shop"></i></div>
+            <span class="proj-tag">Painel • Iplacas / Shock Visual</span>
+          </div>
+          <h3>Vendas Multicanal</h3>
+          <p>Painel que consolida vendas de Shopee, Mercado Livre e vendas internas, comparando orçamento x realizado, mensurando CAC e identificando retrabalhos.</p>
+          <div class="proj-kpis">
+            <span>Meta x Realizado</span>
+            <span>CAC</span>
+            <span>Investimento ADS</span>
+            <span>Ticket Médio</span>
+          </div>
+          <div class="proj-stack">
+            <span>Power BI</span><span>DAX</span><span>M</span><span>Star Schema</span>
+          </div>
+          <div class="proj-insight">
+            <i class="bi bi-lightbulb-fill"></i>
+            Base escalável, preparada para integração futura via API.
+          </div>
+          <a href="https://github.com/KaiqueMateus/Freelancer_Shock" target="_blank" rel="noopener" class="proj-link">
+                <i class="bi bi-github"></i> Ver no GitHub <i class="bi bi-arrow-up-right"></i>
+            </a>
+        </article>
+
+        <article class="project-card reveal" data-cat="paineis">
+          <div class="proj-header">
+            <div class="proj-icon proj-icon-purple"><i class="bi bi-headset"></i></div>
+            <span class="proj-tag">Painel • Petronect</span>
+          </div>
+          <h3>Acompanhamento de TMR</h3>
+          <p>Monitoramento de SLA e TMR de chamados operacionais, integrando múltiplas fontes e identificando gargalos por área e tipo.</p>
+          <div class="proj-kpis">
+            <span>SLA</span>
+            <span>TMR</span>
+            <span>Gargalos por Área</span>
+          </div>
+          <div class="proj-stack">
+            <span>Power BI</span><span>SAP</span><span>S/4HANA</span><span>ServiceNow</span><span>Alteryx</span>
+          </div>
+          <div class="proj-insight">
+            <i class="bi bi-lightbulb-fill"></i>
+            Segmentação inteligente que revela gargalos operacionais.
+          </div>
+          <a href="https://github.com/KaiqueMateus/Tempo_M-dio_Resposta" target="_blank" rel="noopener" class="proj-link">
+                <i class="bi bi-github"></i> Ver no GitHub <i class="bi bi-arrow-up-right"></i>
+            </a>
+        </article>
+
+         
+
+        <!-- AUTOMAÇÕES -->
+        <article class="project-card reveal" data-cat="automacoes">
+  <div class="proj-header">
+    <div class="proj-icon proj-icon-cyan"><i class="bi bi-file-earmark-pdf-fill"></i></div>
+    <span class="proj-tag">Automação • Petrobras</span>
+  </div>
+  <h3>Extração de Perguntas em PDFs de Oportunidades</h3>
+  <p>Automação distribuída que lê em lote os PDFs de oportunidades da Petrobras, identifica cada remetente/fornecedor e contabiliza quantas perguntas cada empresa fez em cada oportunidade — gerando visão consolidada por oportunidade × fornecedor × nº de perguntas.</p>
+  <div class="proj-kpis">
+    <span>pdfplumber</span>
+    <span>PySpark</span>
+    <span>regex</span>
+    <span>defaultdict</span>
+  </div>
+  <div class="proj-stack">
+    <span>Python</span><span>Apache Spark</span><span>Lakehouse</span><span>HTML</span>
+  </div>
+  <div class="proj-insight">
+    <i class="bi bi-trophy-fill"></i>
+    Leitura em lote via Spark, análise textual precisa e visão de negócio pronta para o time comercial.
+  </div>
+  <a href="https://github.com/KaiqueMateus/Automa-o-de-PDFs/tree/main" target="_blank" rel="noopener" class="proj-link">
+    <i class="bi bi-github"></i> Ver no GitHub <i class="bi bi-arrow-up-right"></i>
+  </a>
+</article>
+
+        <article class="project-card reveal" data-cat="automacoes">
+          <div class="proj-header">
+            <div class="proj-icon proj-icon-cyan"><i class="bi bi-dice-5-fill"></i></div>
+            <span class="proj-tag">Automação • Petronect</span>
+          </div>
+          <h3>Simulação de Monte Carlo</h3>
+          <p>Substituiu a ferramenta EttRisk para simulações sobre o lucro da empresa. Solicitado pela área Financeira e apresentado na Reunião de Análise Crítica da Diretoria.</p>
+          <div class="proj-kpis">
+            <span>numpy</span>
+            <span>matplotlib</span>
+            <span>pandas</span>
+          </div>
+          <div class="proj-stack">
+            <span>Python</span><span>PyCharm</span>
+          </div>
+          <div class="proj-insight">
+            <i class="bi bi-trophy-fill"></i>
+            Redução de custos e conhecimento interno preservado.
+          </div>
+          <a href="https://github.com/KaiqueMateus/Simulacao_MonteCarlo" target="_blank" rel="noopener" class="proj-link">
+            <i class="bi bi-github"></i> Ver no GitHub <i class="bi bi-arrow-up-right"></i>
+          </a>
+        </article>
+
+        <article class="project-card reveal" data-cat="automacoes">
+          <div class="proj-header">
+            <div class="proj-icon proj-icon-cyan"><i class="bi bi-search"></i></div>
+            <span class="proj-tag">Automação • Petronect</span>
+          </div>
+          <h3>Busca de Dados no SAP/HANA</h3>
+          <p>Automatiza a busca de dados diretamente no SAP a partir do Alteryx, eliminando extrações manuais e integrando o fluxo com Python.</p>
+          <div class="proj-kpis">
+            <span>Package / ayx</span>
+            <span>pandas</span>
+            <span>win32.com</span>
+          </div>
+          <div class="proj-stack">
+            <span>Alteryx</span><span>Python</span><span>SQL</span>
+          </div>
+          <div class="proj-insight">
+            <i class="bi bi-trophy-fill"></i>
+            Inovação e simplificação no ciclo de relatórios.
+          </div>
+          <a href="https://github.com/KaiqueMateus/Automacao_SAP" target="_blank" rel="noopener" class="proj-link">
+            <i class="bi bi-github"></i> Ver no GitHub <i class="bi bi-arrow-up-right"></i>
+          </a>
+        </article>
+        <article class="project-card reveal" data-cat="paineis">
+          <div class="proj-header">
+            <div class="proj-icon proj-icon-blue"><i class="bi bi-bar-chart-line-fill"></i></div>
+            <span class="proj-tag">Painel • Petronect</span>
+          </div>
+          <h3>Previsão de Fechamento de Oportunidades</h3>
+          <p>Consolida todas as oportunidades em aberto ou encerradas no dia, oferecendo visão completa do andamento das operações — o principal produto da empresa junto à Petrobras.</p>
+          <div class="proj-kpis">
+            <span>Total de Oportunidades</span>
+            <span>Ativas / Encerradas</span>
+            <span>Lotação Petrobras</span>
+            <span>Prorrogação</span>
+          </div>
+          <div class="proj-stack">
+            <span>Power BI</span><span>Alteryx</span><span>SAP</span><span>HANA</span><span>Excel</span>
+          </div>
+          <div class="proj-insight">
+            <i class="bi bi-lightbulb-fill"></i>
+            Suporte crítico em instabilidade do portal, evitando perdas financeiras e atrasos.
+          </div>
+          
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">06 —</span>
+        <h2 class="section-title">Vamos <span class="gradient-text">conversar?</span></h2>
+        <p class="section-sub">Aberto a novas oportunidades, freelas e trocas técnicas</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <a href="mailto:kaique8mateus@gmail.com" class="contact-card reveal">
+          <i class="bi bi-envelope-fill"></i>
+          <h3>E-mail</h3>
+          <p>kaique8mateus@gmail.com</p>
+          <span class="contact-cta">Enviar mensagem <i class="bi bi-arrow-right"></i></span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/kaique-mateus-de-souza-0baa83238/" target="_blank" rel="noopener" class="contact-card reveal">
+          <i class="bi bi-linkedin"></i>
+          <h3>LinkedIn</h3>
+          <p>kaique-mateus-de-souza</p>
+          <span class="contact-cta">Conectar-se <i class="bi bi-arrow-right"></i></span>
+        </a>
+
+        <a href="https://github.com/KaiqueMateus" target="_blank" rel="noopener" class="contact-card reveal">
+          <i class="bi bi-github"></i>
+          <h3>GitHub</h3>
+          <p>@KaiqueMateus</p>
+          <span class="contact-cta">Ver projetos <i class="bi bi-arrow-right"></i></span>
+        </a>
+
+        <div class="contact-card reveal">
+          <i class="bi bi-geo-alt-fill"></i>
+          <h3>Localização</h3>
+          <p>São José dos Pinhais / PR — Brasil</p>
+          <span class="contact-cta">Trabalho remoto / híbrido</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="logo-mark big">K<span class="dot">.</span>M</div>
+        <p>Analista de Dados & BI • Transformando dados em decisões.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Início</a>
+        <a href="#about">Sobre</a>
+        <a href="#stack">Stack</a>
+        <a href="#projects">Projetos</a>
+        <a href="#contact">Contato</a>
+      </div>
+      <div class="footer-socials">
+        <a href="https://github.com/KaiqueMateus" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/kaique-mateus-de-souza-0baa83238/" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:kaique8mateus@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © <span id="year"></span> Kaique Mateus de Souza — Desenvolvido em HTML, CSS & JS.
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="assets/js/index.js"></script>
+</body>
+</html>
